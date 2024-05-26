@@ -1,5 +1,6 @@
 # Math runner
 <img width="1118" alt="image" src="https://github.com/MaatheusGois/Math-Runner/assets/31082311/49c64680-e1bf-4242-a0a6-6e16ca6b6c87">
+<img width="1118" alt="image" src="https://github.com/MaatheusGois/MathRunner/assets/31082311/f8cdeb67-806e-446b-9c70-a67d418ea6c5">
 <img width="1118" alt="image" src="https://github.com/MaatheusGois/Math-Runner/assets/31082311/159a0d4a-f313-4e40-95fa-b49178d129ec">
 <img width="1118" alt="image" src="https://github.com/MaatheusGois/Math-Runner/assets/31082311/3d4204be-dccd-4edd-8b8b-3648a98aef0e">
 <img width="1118" alt="image" src="https://github.com/MaatheusGois/Math-Runner/assets/31082311/98b4a51d-369c-4396-a70b-6d0167b24fdd">
