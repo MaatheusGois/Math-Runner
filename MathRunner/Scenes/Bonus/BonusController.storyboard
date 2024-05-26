@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bonus Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="BonusController" customModule="MathRunner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OAC-bH-eKC">
+                                <rect key="frame" x="102.5" y="324" width="819" height="585"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="dY8-pD-sUG">
+                                        <rect key="frame" x="0.0" y="0.0" width="259.5" height="585"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonus_level_alert-min" translatesAutoresizingMaskIntoConstraints="NO" id="49e-qf-J0q">
+                                                <rect key="frame" x="0.0" y="0.0" width="259.5" height="95.5"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonus_level_sub-min" translatesAutoresizingMaskIntoConstraints="NO" id="CgT-Id-ZP0">
+                                                <rect key="frame" x="0.0" y="108.5" width="259.5" height="476.5"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="49e-qf-J0q" firstAttribute="height" secondItem="CgT-Id-ZP0" secondAttribute="height" multiplier="0.2" id="fkb-XC-AOm"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="baU-F7-z5m">
+                                        <rect key="frame" x="279.5" y="0.0" width="260" height="585"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonus_level_alert-min" translatesAutoresizingMaskIntoConstraints="NO" id="JlN-Jd-b8v">
+                                                <rect key="frame" x="0.0" y="0.0" width="260" height="95.5"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonus_level_mult-min" translatesAutoresizingMaskIntoConstraints="NO" id="qyg-Xw-2G5">
+                                                <rect key="frame" x="0.0" y="108.5" width="260" height="476.5"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="JlN-Jd-b8v" firstAttribute="height" secondItem="qyg-Xw-2G5" secondAttribute="height" multiplier="0.2" id="1XR-ko-BRA"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="2XN-a7-bUe">
+                                        <rect key="frame" x="559.5" y="0.0" width="259.5" height="585"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonus_level_alert-min" translatesAutoresizingMaskIntoConstraints="NO" id="yiS-Vj-8Jp">
+                                                <rect key="frame" x="0.0" y="0.0" width="259.5" height="95.5"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bonus_level_div-min" translatesAutoresizingMaskIntoConstraints="NO" id="wFK-FC-VuT">
+                                                <rect key="frame" x="0.0" y="108.5" width="259.5" height="476.5"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="yiS-Vj-8Jp" firstAttribute="height" secondItem="wFK-FC-VuT" secondAttribute="height" multiplier="0.2" id="5sL-SQ-M74"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OAC-bH-eKC" secondAttribute="height" multiplier="7:5" id="Mh9-up-mLK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70227141768675494" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="OAC-bH-eKC" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" multiplier="0.9" id="LY9-Oc-Dyn"/>
+                            <constraint firstItem="OAC-bH-eKC" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Wo4-Am-Gpf"/>
+                            <constraint firstItem="OAC-bH-eKC" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="vTb-Il-BbS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="divisionAlertView" destination="yiS-Vj-8Jp" id="m5w-CS-Gpz"/>
+                        <outlet property="divisionView" destination="wFK-FC-VuT" id="mJV-7s-LeF"/>
+                        <outlet property="multiplicationAlertView" destination="JlN-Jd-b8v" id="Hp5-kc-7GR"/>
+                        <outlet property="multiplicationView" destination="qyg-Xw-2G5" id="tej-70-zel"/>
+                        <outlet property="subtractionAlertView" destination="49e-qf-J0q" id="X8p-Lt-IKr"/>
+                        <outlet property="subtractionView" destination="CgT-Id-ZP0" id="XOm-9d-9h6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59375" y="3.0746705710102487"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bonus_level_alert-min" width="1181" height="369"/>
+        <image name="bonus_level_div-min" width="1182" height="2048"/>
+        <image name="bonus_level_mult-min" width="1182" height="2048"/>
+        <image name="bonus_level_sub-min" width="1182" height="2048"/>
+    </resources>
+</document>

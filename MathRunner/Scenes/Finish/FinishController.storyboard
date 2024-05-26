@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Finish Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="FinishController" customModule="MathRunner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F6Z-0G-xRK" customClass="SCNView">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_background" translatesAutoresizingMaskIntoConstraints="NO" id="7G0-mg-SOM">
+                                <rect key="frame" x="0.0" y="-2" width="1024" height="1370"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close_button" translatesAutoresizingMaskIntoConstraints="NO" id="tBb-Mi-syL">
+                                <rect key="frame" x="922" y="66" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3WK-qz-vPU"/>
+                                    <constraint firstAttribute="width" constant="60" id="4Sh-TR-kO1"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zqH-yl-9Xe">
+                                <rect key="frame" x="42" y="597.5" width="940" height="38.5"/>
+                                <subviews>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo_image" translatesAutoresizingMaskIntoConstraints="NO" id="meU-W5-0C3">
+                                        <rect key="frame" x="0.0" y="0.0" width="940" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="kcf-ec-Lnb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matheus Gois" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8o-cZ-X6a" customClass="CustomLabel" customModule="MathRunner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="940" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oc-h6-4Bd" customClass="CustomLabel" customModule="MathRunner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="940" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple_logo" translatesAutoresizingMaskIntoConstraints="NO" id="j9v-cQ-5EO">
+                                <rect key="frame" x="409.5" y="514" width="205" height="205"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="j9v-cQ-5EO" secondAttribute="height" id="fym-Zf-gaE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qdM-GA-bWL"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j9v-cQ-5EO" firstAttribute="width" secondItem="F6Z-0G-xRK" secondAttribute="width" multiplier="0.2" id="Eyi-aI-ONG"/>
+                            <constraint firstAttribute="bottom" secondItem="7G0-mg-SOM" secondAttribute="bottom" constant="-2" id="L5P-0E-Igg"/>
+                            <constraint firstItem="j9v-cQ-5EO" firstAttribute="centerY" secondItem="qdM-GA-bWL" secondAttribute="centerY" multiplier="0.9" id="Q7G-1b-jfv"/>
+                            <constraint firstItem="tBb-Mi-syL" firstAttribute="top" secondItem="qdM-GA-bWL" secondAttribute="top" constant="42" id="Wnq-Aj-LqM"/>
+                            <constraint firstItem="7G0-mg-SOM" firstAttribute="trailing" secondItem="qdM-GA-bWL" secondAttribute="trailing" id="cwK-l3-dpw"/>
+                            <constraint firstItem="j9v-cQ-5EO" firstAttribute="centerX" secondItem="qdM-GA-bWL" secondAttribute="centerX" id="gSd-7s-Z1E"/>
+                            <constraint firstItem="7G0-mg-SOM" firstAttribute="leading" secondItem="qdM-GA-bWL" secondAttribute="leading" id="m6s-MZ-Zq2"/>
+                            <constraint firstItem="qdM-GA-bWL" firstAttribute="trailing" secondItem="zqH-yl-9Xe" secondAttribute="trailing" constant="42" id="mMa-qy-CNU"/>
+                            <constraint firstItem="zqH-yl-9Xe" firstAttribute="centerY" secondItem="qdM-GA-bWL" secondAttribute="centerY" multiplier="0.9" id="oMc-Lz-E17"/>
+                            <constraint firstItem="zqH-yl-9Xe" firstAttribute="leading" secondItem="qdM-GA-bWL" secondAttribute="leading" constant="42" id="s6E-Z3-yyF"/>
+                            <constraint firstItem="qdM-GA-bWL" firstAttribute="trailing" secondItem="tBb-Mi-syL" secondAttribute="trailing" constant="42" id="ss8-da-Lwz"/>
+                            <constraint firstItem="7G0-mg-SOM" firstAttribute="top" secondItem="F6Z-0G-xRK" secondAttribute="top" constant="-2" id="t1x-p5-w6b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="tBb-Mi-syL" id="V5w-LN-IwC"/>
+                        <outlet property="imageApple" destination="j9v-cQ-5EO" id="I6x-KV-REG"/>
+                        <outlet property="imageProfile" destination="meU-W5-0C3" id="f1O-hV-oLK"/>
+                        <outlet property="infoLabel" destination="6oc-h6-4Bd" id="AhC-b6-Pry"/>
+                        <outlet property="titleLabel" destination="W8o-cZ-X6a" id="9TF-qO-APi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.453125" y="3.5139092240117127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple_logo" width="2056" height="2056"/>
+        <image name="close_button" width="362" height="362"/>
+        <image name="intro_background" width="2355" height="4987"/>
+        <image name="photo_image" width="1092" height="1092"/>
+    </resources>
+</document>

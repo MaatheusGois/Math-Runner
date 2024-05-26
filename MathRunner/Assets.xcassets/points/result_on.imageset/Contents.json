@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "result_on-min.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

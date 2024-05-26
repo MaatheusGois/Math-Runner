@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="adb-fT-l4f">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Loader Controller-->
+        <scene sceneID="am4-F9-iLa">
+            <objects>
+                <viewController id="adb-fT-l4f" customClass="LoaderController" customModule="MathRunner" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CdW-BG-cgn">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_background" translatesAutoresizingMaskIntoConstraints="NO" id="RVF-z4-Y98">
+                                <rect key="frame" x="0.0" y="-2" width="1024" height="1370"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loader_background" translatesAutoresizingMaskIntoConstraints="NO" id="zme-Nc-yn7">
+                                <rect key="frame" x="0.0" y="1202" width="1024" height="55"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loader_progress" translatesAutoresizingMaskIntoConstraints="NO" id="wpf-ko-yzb" userLabel="loader_progress">
+                                <rect key="frame" x="0.0" y="1205.5" width="10" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="JJA-1O-pVV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aUw-cC-rSC" customClass="CustomLabel" customModule="MathRunner" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="1163" width="1024" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="6FS-HN-jgC">
+                                <rect key="frame" x="153.5" y="188" width="717" height="717"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6FS-HN-jgC" secondAttribute="height" id="TA4-pc-SZR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cpE-9K-anJ"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.23529411764705882" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zme-Nc-yn7" firstAttribute="centerY" secondItem="RVF-z4-Y98" secondAttribute="centerY" multiplier="1.8" id="4Qn-6A-oUn"/>
+                            <constraint firstAttribute="bottom" secondItem="RVF-z4-Y98" secondAttribute="bottom" constant="-2" id="4TS-EL-zof"/>
+                            <constraint firstItem="wpf-ko-yzb" firstAttribute="height" secondItem="zme-Nc-yn7" secondAttribute="height" multiplier="0.872727" id="Exl-RL-VHU"/>
+                            <constraint firstItem="RVF-z4-Y98" firstAttribute="top" secondItem="CdW-BG-cgn" secondAttribute="top" constant="-2" id="G07-eL-45G"/>
+                            <constraint firstItem="zme-Nc-yn7" firstAttribute="height" secondItem="RVF-z4-Y98" secondAttribute="height" multiplier="0.040146" id="Hmb-pK-y30"/>
+                            <constraint firstItem="wpf-ko-yzb" firstAttribute="leading" secondItem="RVF-z4-Y98" secondAttribute="leading" id="IBZ-fl-CQA"/>
+                            <constraint firstItem="zme-Nc-yn7" firstAttribute="centerX" secondItem="RVF-z4-Y98" secondAttribute="centerX" id="QRN-lb-S3X"/>
+                            <constraint firstItem="RVF-z4-Y98" firstAttribute="leading" secondItem="cpE-9K-anJ" secondAttribute="leading" id="SSW-MF-TO6"/>
+                            <constraint firstItem="zme-Nc-yn7" firstAttribute="width" secondItem="RVF-z4-Y98" secondAttribute="width" id="YYl-yt-CNP"/>
+                            <constraint firstItem="6FS-HN-jgC" firstAttribute="centerY" secondItem="RVF-z4-Y98" secondAttribute="centerY" multiplier="0.8" id="cOg-sh-Gqf"/>
+                            <constraint firstItem="zme-Nc-yn7" firstAttribute="top" secondItem="aUw-cC-rSC" secondAttribute="bottom" multiplier="0.99" id="el3-sg-Q9D"/>
+                            <constraint firstItem="RVF-z4-Y98" firstAttribute="trailing" secondItem="cpE-9K-anJ" secondAttribute="trailing" id="lde-9C-pJi"/>
+                            <constraint firstItem="wpf-ko-yzb" firstAttribute="centerY" secondItem="zme-Nc-yn7" secondAttribute="centerY" id="pGN-84-wRX"/>
+                            <constraint firstItem="6FS-HN-jgC" firstAttribute="width" secondItem="RVF-z4-Y98" secondAttribute="width" multiplier="0.7" id="tG8-4C-Ja1"/>
+                            <constraint firstItem="aUw-cC-rSC" firstAttribute="centerX" secondItem="RVF-z4-Y98" secondAttribute="centerX" id="wdi-k8-sjm"/>
+                            <constraint firstItem="6FS-HN-jgC" firstAttribute="centerX" secondItem="RVF-z4-Y98" secondAttribute="centerX" id="wvA-Xw-RsA"/>
+                            <constraint firstItem="aUw-cC-rSC" firstAttribute="width" secondItem="RVF-z4-Y98" secondAttribute="width" id="y5O-oO-yf8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dhs-Zf-46X"/>
+                    <connections>
+                        <outlet property="logoView" destination="6FS-HN-jgC" id="6ZX-cz-1DB"/>
+                        <outlet property="progressConstraint" destination="JJA-1O-pVV" id="j0K-hy-BVZ"/>
+                        <outlet property="progressLabel" destination="aUw-cC-rSC" id="8gz-Ub-hLN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D0X-q9-b7y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1502.9296875" y="374.23133235724742"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="intro_background" width="2355" height="4987"/>
+        <image name="loader_background" width="2385" height="175"/>
+        <image name="loader_progress" width="1653" height="157"/>
+        <image name="logo" width="1000" height="1000"/>
+    </resources>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intro Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="IntroController" customModule="MathRunner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F6Z-0G-xRK">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_background" translatesAutoresizingMaskIntoConstraints="NO" id="dg1-1F-8Mw">
+                                <rect key="frame" x="0.0" y="-2" width="1024" height="1370"/>
+                            </imageView>
+                            <textView hidden="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75d-OC-kYZ" customClass="StarWarsTextView" customModule="MathRunner" customModuleProvider="target">
+                                <rect key="frame" x="256" y="686" width="512" height="683"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Matthew grew up in a Brazilian favela, facing challenges without his father. Struggling with school, his life took a turn at 17 when he read his first book. Proficient in mathematics and innovation, he received support from many teachers on his journey. Now, in need of further learning, he seeks a new mentor to guide him in his next chapter.</string>
+                                <color key="textColor" red="0.9137254901960784" green="0.67450980392156867" blue="0.066666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="close_button" translatesAutoresizingMaskIntoConstraints="NO" id="NWb-vH-NTl">
+                                <rect key="frame" x="922" y="66" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="6Sy-9W-ENi"/>
+                                    <constraint firstAttribute="height" constant="60" id="TzZ-rk-bR9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A long time ago in a country far, far away…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAa-Fs-6mU">
+                                <rect key="frame" x="79" y="656.5" width="866" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Q0W-Mo-Xtu">
+                                <rect key="frame" x="103" y="257.5" width="818" height="581"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qdM-GA-bWL"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qAa-Fs-6mU" firstAttribute="centerY" secondItem="qdM-GA-bWL" secondAttribute="centerY" id="35e-vm-woS"/>
+                            <constraint firstItem="NWb-vH-NTl" firstAttribute="top" secondItem="qdM-GA-bWL" secondAttribute="top" constant="42" id="7h0-VX-vrO"/>
+                            <constraint firstItem="75d-OC-kYZ" firstAttribute="centerY" secondItem="qdM-GA-bWL" secondAttribute="centerY" multiplier="1.5" id="Koe-CA-VFr"/>
+                            <constraint firstItem="75d-OC-kYZ" firstAttribute="height" secondItem="F6Z-0G-xRK" secondAttribute="height" multiplier="0.5" id="PlA-rE-pfB"/>
+                            <constraint firstItem="Q0W-Mo-Xtu" firstAttribute="width" secondItem="F6Z-0G-xRK" secondAttribute="width" multiplier="0.798828" id="VG0-Qw-gRB"/>
+                            <constraint firstItem="dg1-1F-8Mw" firstAttribute="leading" secondItem="qdM-GA-bWL" secondAttribute="leading" id="WkQ-Xh-ktY"/>
+                            <constraint firstItem="dg1-1F-8Mw" firstAttribute="top" secondItem="F6Z-0G-xRK" secondAttribute="top" constant="-2" id="Wu0-aJ-ETy"/>
+                            <constraint firstItem="Q0W-Mo-Xtu" firstAttribute="centerY" secondItem="qdM-GA-bWL" secondAttribute="centerY" multiplier="0.8" id="aX6-DI-hED"/>
+                            <constraint firstItem="Q0W-Mo-Xtu" firstAttribute="centerX" secondItem="qdM-GA-bWL" secondAttribute="centerX" id="dS3-bl-va8"/>
+                            <constraint firstItem="Q0W-Mo-Xtu" firstAttribute="height" secondItem="F6Z-0G-xRK" secondAttribute="height" multiplier="0.425329" id="eel-LF-E6s"/>
+                            <constraint firstItem="qAa-Fs-6mU" firstAttribute="width" secondItem="F6Z-0G-xRK" secondAttribute="width" multiplier="0.845703" id="fns-Qa-U9a"/>
+                            <constraint firstItem="dg1-1F-8Mw" firstAttribute="trailing" secondItem="qdM-GA-bWL" secondAttribute="trailing" id="hrt-Ju-vHm"/>
+                            <constraint firstItem="qAa-Fs-6mU" firstAttribute="centerX" secondItem="qdM-GA-bWL" secondAttribute="centerX" id="k2x-v6-6FU"/>
+                            <constraint firstItem="75d-OC-kYZ" firstAttribute="centerX" secondItem="qdM-GA-bWL" secondAttribute="centerX" id="qKM-b4-qHn"/>
+                            <constraint firstItem="qdM-GA-bWL" firstAttribute="trailing" secondItem="NWb-vH-NTl" secondAttribute="trailing" constant="42" id="rfS-KO-iC4"/>
+                            <constraint firstItem="75d-OC-kYZ" firstAttribute="width" secondItem="F6Z-0G-xRK" secondAttribute="width" multiplier="0.5" id="uDb-9w-BjG"/>
+                            <constraint firstAttribute="bottom" secondItem="dg1-1F-8Mw" secondAttribute="bottom" constant="-2" id="xec-mO-mdp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="NWb-vH-NTl" id="ZGL-gj-OFG"/>
+                        <outlet property="logoImage" destination="Q0W-Mo-Xtu" id="oii-LM-erN"/>
+                        <outlet property="textView" destination="75d-OC-kYZ" id="RvH-jd-TY2"/>
+                        <outlet property="titleLabel" destination="qAa-Fs-6mU" id="7dL-B2-Gjf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.453125" y="3.5139092240117127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close_button" width="362" height="362"/>
+        <image name="intro_background" width="2355" height="4987"/>
+        <image name="star_logo" width="1803" height="581"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="HomeController" customModule="MathRunner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_background" translatesAutoresizingMaskIntoConstraints="NO" id="xGE-ZW-ceH">
+                                <rect key="frame" x="0.0" y="-2" width="1024" height="1370"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="config" translatesAutoresizingMaskIntoConstraints="NO" id="aIs-ru-Ss5">
+                                <rect key="frame" x="42" y="12" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="WWB-6R-O8s"/>
+                                    <constraint firstAttribute="width" secondItem="aIs-ru-Ss5" secondAttribute="height" multiplier="1:1" id="jXa-sC-27J"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Jx7-4k-Rfv">
+                                <rect key="frame" x="0.0" y="92" width="1024" height="1234"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Lyf-47-kIj">
+                                        <rect key="frame" x="112" y="0.0" width="800" height="227"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lecture_off" translatesAutoresizingMaskIntoConstraints="NO" id="cf7-t6-shU" customClass="StepView" customModule="MathRunner" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="800" height="227"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="optionRawValue">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CbH-9X-3vA">
+                                        <rect key="frame" x="0.0" y="252" width="1024" height="226.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="step_off" translatesAutoresizingMaskIntoConstraints="NO" id="TxI-Kg-WlH" customClass="StepView" customModule="MathRunner" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="800" height="226.5"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="optionRawValue">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4i7-OO-nmm">
+                                                <rect key="frame" x="800" y="0.0" width="224" height="226.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="4i7-OO-nmm" firstAttribute="width" secondItem="TxI-Kg-WlH" secondAttribute="width" multiplier="0.28" id="PHT-hP-2wd"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cIL-WO-gHW">
+                                        <rect key="frame" x="112" y="503.5" width="800" height="227"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="treasure_off" translatesAutoresizingMaskIntoConstraints="NO" id="sIm-nP-5eI" customClass="StepView" customModule="MathRunner" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="800" height="227"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="optionRawValue">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UKt-mS-xLL">
+                                        <rect key="frame" x="0.0" y="755.5" width="1024" height="226.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9U-FW-ikg">
+                                                <rect key="frame" x="0.0" y="0.0" width="224" height="226.5"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="step_off" translatesAutoresizingMaskIntoConstraints="NO" id="Cn3-V2-fpN" customClass="StepView" customModule="MathRunner" customModuleProvider="target">
+                                                <rect key="frame" x="224" y="0.0" width="800" height="226.5"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="optionRawValue">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Q9U-FW-ikg" firstAttribute="width" secondItem="Cn3-V2-fpN" secondAttribute="width" multiplier="0.28" id="Wf1-E5-VnV"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uAy-Gm-fQN">
+                                        <rect key="frame" x="112" y="1007" width="800" height="227"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lecture_on" translatesAutoresizingMaskIntoConstraints="NO" id="wWs-O7-T5r" customClass="StepView" customModule="MathRunner" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="800" height="227"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="optionRawValue">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="points" translatesAutoresizingMaskIntoConstraints="NO" id="dbY-Uu-hhX">
+                                <rect key="frame" x="796" y="12" width="200" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="MaP-km-zLE"/>
+                                    <constraint firstAttribute="height" constant="60" id="VYS-m5-yEd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEF-rC-zPx" customClass="UpdateLabel" customModule="MathRunner" customModuleProvider="target">
+                                <rect key="frame" x="827" y="27" width="94" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.0039215686274509803" green="0.23529411764705882" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="aIs-ru-Ss5" secondAttribute="top" constant="8" id="4XB-zF-jOG"/>
+                            <constraint firstAttribute="trailing" secondItem="Jx7-4k-Rfv" secondAttribute="trailing" id="5Ha-zW-HoX"/>
+                            <constraint firstItem="JEF-rC-zPx" firstAttribute="width" secondItem="dbY-Uu-hhX" secondAttribute="width" multiplier="0.47" id="DUG-ZV-YWw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dbY-Uu-hhX" secondAttribute="trailing" constant="28" id="EEi-At-aRG"/>
+                            <constraint firstItem="Jx7-4k-Rfv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Jt1-cz-RXY"/>
+                            <constraint firstAttribute="bottom" secondItem="Jx7-4k-Rfv" secondAttribute="bottom" constant="40" id="K7w-96-xKF"/>
+                            <constraint firstItem="aIs-ru-Ss5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="42" id="Kff-A6-i6j"/>
+                            <constraint firstItem="Jx7-4k-Rfv" firstAttribute="top" secondItem="aIs-ru-Ss5" secondAttribute="top" constant="80" id="LOX-m3-Nk0"/>
+                            <constraint firstAttribute="bottom" secondItem="xGE-ZW-ceH" secondAttribute="bottom" constant="-2" id="Qon-CD-aYJ"/>
+                            <constraint firstItem="xGE-ZW-ceH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Tf4-2u-yWP"/>
+                            <constraint firstItem="JEF-rC-zPx" firstAttribute="height" secondItem="dbY-Uu-hhX" secondAttribute="height" multiplier="0.633333" id="UZG-ct-Cba"/>
+                            <constraint firstItem="JEF-rC-zPx" firstAttribute="centerY" secondItem="dbY-Uu-hhX" secondAttribute="centerY" constant="4" id="Yee-62-RLy"/>
+                            <constraint firstItem="xGE-ZW-ceH" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="-2" id="oVX-Fq-qJ3"/>
+                            <constraint firstItem="xGE-ZW-ceH" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="uzl-7X-DDE"/>
+                            <constraint firstItem="dbY-Uu-hhX" firstAttribute="leading" secondItem="JEF-rC-zPx" secondAttribute="trailing" constant="-125" id="wUU-fF-UUO"/>
+                            <constraint firstItem="dbY-Uu-hhX" firstAttribute="centerY" secondItem="aIs-ru-Ss5" secondAttribute="centerY" id="xK9-70-Pu1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="configButton" destination="aIs-ru-Ss5" id="ev0-jM-A76"/>
+                        <outlet property="finalStepView" destination="cf7-t6-shU" id="AWn-Pt-AVD"/>
+                        <outlet property="introStepView" destination="wWs-O7-T5r" id="rZV-Q6-jCP"/>
+                        <outlet property="pointsLabel" destination="JEF-rC-zPx" id="SXu-Ys-7uk"/>
+                        <outlet property="secondStageStepView" destination="TxI-Kg-WlH" id="LgK-sR-uWN"/>
+                        <outlet property="treasureStepView" destination="sIm-nP-5eI" id="RZk-NX-HHe"/>
+                        <outlet property="tutorialStepView" destination="Cn3-V2-fpN" id="gVK-q6-mmc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.18749999999999" y="68.081991215226935"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="config" width="296" height="295"/>
+        <image name="intro_background" width="2355" height="4987"/>
+        <image name="lecture_off" width="800" height="800"/>
+        <image name="lecture_on" width="800" height="800"/>
+        <image name="points" width="786" height="265"/>
+        <image name="step_off" width="800" height="800"/>
+        <image name="treasure_off" width="800" height="800"/>
+    </resources>
+</document>
